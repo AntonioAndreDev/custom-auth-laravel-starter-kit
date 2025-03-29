@@ -1,0 +1,21 @@
+services:
+    db:
+        image: postgres:latest
+        container_name: autenticacao_personalizada_pgsql  # Renomeado
+        restart: unless-stopped
+        environment:
+            POSTGRES_DB: laravel
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: secret
+        ports:
+            - "5432:5432"
+        networks:
+            - laravel
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+
+networks:
+    laravel:
+
+volumes:
+    pgdata:

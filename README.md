@@ -37,18 +37,21 @@ Perfect for those who prefer not to use pre-existing packages like Fortify or Br
 
 ### 1. Install Dependencies  
 Run the following command in the project root to install PHP and JavaScript dependencies:  
-bash
+```bash
 composer install && npm install
+```
 
 
 ### 2. Configure Environment
 Create a .env file based on the contents of .env.example: 
-bash
+```bash
 cp .env.example .env
+```
 
 Make sure to configure your environment variables as needed. Don't forget to put a value for APP_KEY:
-bash
+```bash
 php artisan key:generate
+```
 
 
 ### 3. Start the Database
@@ -60,19 +63,21 @@ docker-compose up -d
 
 ### 4. Run Migrations 
 Apply the database migrations:
-bash
+```bash
 php artisan migrate
+```
 
 If the database does not exist, only select 'yes' to create it.
 
 ### 5. Start Website
 To run the website, both the frontend and backend need to be running simultaneously in separate terminals:
-bash
+```bash
 npm run dev
+```
 
-bash
+```bash
 php artisan serve
-
+```
 
 ## How to View Emails?
 For convenience, all generated emails will be logged in the Laravel log file located at storage/logs/laravel.log. You can check this file to see the email content generated during the application process.

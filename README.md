@@ -53,9 +53,9 @@ php artisan key:generate
 
 ### 3. Start the Database
 The project uses PostgreSQL as the database, managed via Docker for convenience. To start the database, run:
-bash
+```bash
 docker-compose up -d
-
+```
 ⚠️ Feel free to use a different database if preferred, but ensure your .env file is configured accordingly.
 
 ### 4. Run Migrations 

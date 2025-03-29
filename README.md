@@ -97,3 +97,7 @@ If you prefer English messages, simply remove the second array from the validate
 - [ ] *Social Login Providers Integration* – Ability for users to log in using third-party services like Google, Facebook, etc., via OAuth authentication.
 
 These features will be added in upcoming versions to improve the functionality and security of the application.
+
+##
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://buymeacoffee.com/aadev)
